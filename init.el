@@ -1,12 +1,19 @@
+(require 'cask "/usr/local/opt/cask/cask.el")
+(cask-initialize)
+
 ;; package to install
 (defvar my/packages
   '(init-loader
     anything
     js2-mode
     jedi-core
-    company-jedi
+    scss-mode
+    web-mode
+    helm
+    whitespace
+    company
     )
-  )
+)
 
 ;; init package.el
 (require 'package)
